@@ -159,8 +159,6 @@ The Round 1 approach combines logistic regression with L1 regularization, hyperp
 
 ### **Experimental Findings of Round 1:**
 
-### Experimental Findings
-
 - Train Accuracy: 0.9343
 - Cross-validation Accuracy: 0.6141
 - Validation Accuracy: 0.6266
@@ -184,6 +182,8 @@ The Round 1 approach combines logistic regression with L1 regularization, hyperp
 |--------------------|-------|
 | Macro avg          | 0.56  | 0.52  | 0.53 |
 | Weighted avg       | 0.62  | 0.63  | 0.62 |
+
+* Confusion matrix is present in Round 1 Classification file.
 
 #### Selected Features:
 * ['abdullah', 'ad', 'adam', 'adana', 'adapazarı', 'aday', 'adlı', 'adres', 'adresini', 'advertising', ..., 'şarkıları', 'şehir', 'şehit', 'şekilde', 'şifa', 'şimdi', 'şubemiz', 'şık', 'şıklık', 'şıklığı']
@@ -308,6 +308,51 @@ The model's performance was evaluated using the classification report, which inc
 * The highest performing class in terms of F1-score was food (0.86), reflecting a strong ability of the model to predict this category accurately.
 * Gaming had the lowest number of instances (3), which may have impacted its classification performance.
 * The overall macro average and weighted average F1-scores are 0.62 and 0.65.
+
+## **Classification Task Round 3 Approach: Logistic Regression**
+
+The Round 1 approach was used again, therefore the implementation details remain the same.
+
+**Experimental Findings of Round 3:**
+
+* **Train Accuracy:** 0.9972627737226277  
+* **Cross-validation Accuracy:** 0.6090263259171425  
+* **Validation Accuracy:** 0.6138433515482696  
+
+### Classification Report:
+
+| Class                  | Precision | Recall | F1-Score | Support |
+|------------------------|-----------|--------|----------|---------|
+| art                    | 0.34      | 0.37   | 0.35     | 38      |
+| entertainment           | 0.41      | 0.43   | 0.42     | 65      |
+| fashion                 | 0.72      | 0.52   | 0.60     | 60      |
+| food                    | 0.87      | 0.88   | 0.87     | 102     |
+| gaming                  | 0.00      | 0.00   | 0.00     | 3       |
+| health and lifestyle    | 0.56      | 0.66   | 0.61     | 100     |
+| mom and children        | 0.47      | 0.30   | 0.37     | 30      |
+| sports                  | 0.55      | 0.52   | 0.53     | 23      |
+| tech                    | 0.65      | 0.75   | 0.70     | 69      |
+| travel                  | 0.65      | 0.59   | 0.62     | 59      |
+
+* **Accuracy** 0.61  
+* **Macro avg**: 0.52  0.50  0.51  549  
+* **Weighted avg**: 0.61  0.61  0.61  549
+
+### Confusion Matrix
+
+|                | art | entertainment | fashion | food | gaming | health and lifestyle | mom and children | sports | tech | travel |
+|----------------|-----|---------------|---------|------|--------|-----------------------|------------------|--------|------|--------|
+| **art**        | 14  | 8             | 1       | 2    | 0      | 7                     | 1                | 0      | 2    | 3      |
+| **entertainment** | 6  | 28            | 5       | 4    | 0      | 10                    | 2                | 2      | 5    | 5      |
+| **fashion**    | 6   | 5             | 31      | 3    | 0      | 9                     | 1                | 1      | 5    | 0      |
+| **food**       | 1   | 4             | 1       | 90   | 0      | 2                     | 0                | 0      | 0    | 4      |
+| **gaming**     | 1   | 0             | 0       | 0    | 1      | 0                     | 0                | 0      | 1    | 0      |
+| **health and lifestyle** | 4 | 6      | 1       | 1    | 0      | 66                    | 7                | 3      | 6    | 6      |
+| **mom and children** | 5 | 4          | 2       | 0    | 0      | 6                     | 9                | 0      | 2    | 2      |
+| **sports**     | 1   | 2             | 0       | 0    | 1      | 0                     | 3                | 12     | 3    | 1      |
+| **tech**       | 0   | 3             | 2       | 1    | 0      | 8                     | 0                | 3      | 52   | 0      |
+| **travel**     | 3   | 9             | 0       | 2    | 0      | 5                     | 1                | 4      | 4    | 35     |
+
 
 # **Like Count Prediction Regression Task:**
 
@@ -613,4 +658,29 @@ Actual: 19, Predicted: 21
 Actual: 107, Predicted: 84
 Actual: 73, Predicted: 53
 Actual: 98, Predicted: 107
+```
+
+## **Regression Task Round 3 Approach: XGBoost**
+
+The approach for regression task did not change since Round 2, the implementation details remain the same.
+
+**Experimental Findings of Round 3**
+
+```
+XGBoost Validation Log MSE: 0.9649677251301894
+XGBoost Validation R²: 0.3650225715208254
+XGBoost Test Log MSE: 2.823053486113462
+XGBoost Test R²: -0.00962724833433981
+
+Sample Predictions (XGB):
+Actual: 114, Predicted: 364
+Actual: 68, Predicted: 127
+Actual: 122, Predicted: 45
+Actual: 100, Predicted: 66
+Actual: 94, Predicted: 23
+Actual: 70, Predicted: 28
+Actual: 144, Predicted: 20
+Actual: 113, Predicted: 64
+Actual: 86, Predicted: 69
+Actual: 59, Predicted: 34
 ```
