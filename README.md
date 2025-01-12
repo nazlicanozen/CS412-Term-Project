@@ -706,4 +706,4 @@ Actual: 59, Predicted: 34
 * Mehmet Barış Baştuğ 30617: Regression task
 * Bora Başkan 27747: Classification task
 * Shahd Sherif 30531: Classification task
-* Nazlıcan Özen: Classification task, GitHub repository management, READme author. 
+* Nazlıcan Özen: Classification task, GitHub repository management, README author. 
