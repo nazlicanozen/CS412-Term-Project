@@ -1,6 +1,21 @@
+# **CS412 TERM PROJECT**
 # **Influencer Category Classification Task:**
 * **Round 1:** Logistic Regression 
 * **Round 2:** SVM with GridSearchCV
+
+## **Repository Overview**
+.
+├── README.md
+├── ROUND 1
+│   ├── CS412_TERM_PROJECT_ROUND_1_(Classification).ipynb
+│   └── CS412_TERM_PROJECT_ROUND_1_(Regression).ipynb
+├── ROUND 2
+│   ├── CS412_TERM_PROJECT_ROUND_2_(Classification).ipynb
+│   └── CS412_TERM_PROJECT_ROUND_2_(Regression).ipynb
+├── ROUND 3
+│   ├── CS412_TERM_PROJECT_ROUND_3_(Classification).ipynb
+│   └── CS412_TERM_PROJECT_ROUND_3_(Regression).ipynb
+└── desktop.ini
 
 ## **Classification Task: Initial Steps For All Rounds**
 
@@ -684,3 +699,10 @@ Actual: 113, Predicted: 64
 Actual: 86, Predicted: 69
 Actual: 59, Predicted: 34
 ```
+
+### **Team Contributions**
+* Bilge Kağan Yılmaz 30895: Regression task
+* Mehmet Barış Baştuğ 30617: Regression task
+* Bora Başkan 27747: Classification task
+* Shahd Sherif 30531: Classification task
+* Nazlıcan Özen: Classification task, GitHub repository management, READme author. 
