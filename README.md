@@ -4,18 +4,19 @@
 * **Round 2:** SVM with GridSearchCV
 
 ## **Repository Overview**
-.
-├── README.md
-├── ROUND 1
-│   ├── CS412_TERM_PROJECT_ROUND_1_(Classification).ipynb
-│   └── CS412_TERM_PROJECT_ROUND_1_(Regression).ipynb
-├── ROUND 2
-│   ├── CS412_TERM_PROJECT_ROUND_2_(Classification).ipynb
-│   └── CS412_TERM_PROJECT_ROUND_2_(Regression).ipynb
-├── ROUND 3
-│   ├── CS412_TERM_PROJECT_ROUND_3_(Classification).ipynb
-│   └── CS412_TERM_PROJECT_ROUND_3_(Regression).ipynb
-└── desktop.ini
+###### .
+###### ├── README.md
+###### ├── ROUND 1
+###### │   ├── CS412_TERM_PROJECT_ROUND_1_(Classification).ipynb
+###### │   └── CS412_TERM_PROJECT_ROUND_1_(Regression).ipynb
+###### ├── ROUND 2
+###### │   ├── CS412_TERM_PROJECT_ROUND_2_(Classification).ipynb
+###### │   └── CS412_TERM_PROJECT_ROUND_2_(Regression).ipynb
+###### ├── ROUND 3
+###### │   ├── CS412_TERM_PROJECT_ROUND_3_(Classification).ipynb
+###### │   └── CS412_TERM_PROJECT_ROUND_3_(Regression).ipynb
+###### └── desktop.ini
+
 
 ## **Classification Task: Initial Steps For All Rounds**
 
